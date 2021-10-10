@@ -594,6 +594,12 @@ section {
   position: relative;
   z-index: 1;
 }
+img .portfolio {
+    float: center;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
 .portfolio .portfolio-wrap .portfolio-links {
   opacity: 0;
   left: 0;
