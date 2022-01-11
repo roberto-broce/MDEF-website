@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Sense-Making Journal: Loneliness Among Young Adults in Barcelona - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p:last-child{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p:last-child,.markdown-body .alert>ul:last-child{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.figma{display:table;position:relative;width:100%;padding-bottom:56.25%}.figma iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;border:1px solid #eee}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:50%;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;text-decoration:none;padding-left:22px}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em;font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-inner comment-enabled" data-hard-breaks="true"><p><img src="https://lh3.googleusercontent.com/BC46zGg8rTqN-dCo1K4rVn9TRkGw9fCV7eKEqjx-kySceg5jOBVaUjjZGLxpkIPBPqwnEg=s85" alt="" loading="lazy"></p><h1 id="Sense-Making-Journal-Loneliness-Among-Young-Adults-in-Barcelona" data-id="Sense-Making-Journal-Loneliness-Among-Young-Adults-in-Barcelona"><a class="anchor hidden-xs" href="#Sense-Making-Journal-Loneliness-Among-Young-Adults-in-Barcelona" title="Sense-Making-Journal-Loneliness-Among-Young-Adults-in-Barcelona"><span class="octicon octicon-link"></span></a><span>Sense-Making Journal: Loneliness Among Young Adults in Barcelona</span></h1><p><span>MDEF: Measuring the world / A world in data activity report.</span></p><div class="alert alert-info">
+<p><span>Team members:</span><br>
+<span>Aparna</span><br>
+<span>Borka</span><br>
+<span>Marina</span><br>
+<span>Joaquin</span><br>
+<span>George</span><br>
+<span>Roberto</span></p>
+</div><p><strong><span>Journal Index</span></strong></p><p><span class="toc"><ul>
+<li><a href="#Sense-Making-Journal-Loneliness-Among-Young-Adults-in-Barcelona" title="Sense-Making Journal: Loneliness Among Young Adults in Barcelona">Sense-Making Journal: Loneliness Among Young Adults in Barcelona</a><ul>
+<li><a href="#From-objectives-to-the-hypothesis" title="From objectives to the hypothesis">From objectives to the hypothesis</a><ul>
+<li><a href="#Brainstorming" title="Brainstorming">Brainstorming</a></li>
+<li><a href="#Project-Goals" title="Project Goals">Project Goals</a></li>
+</ul>
+</li>
+<li><a href="#From-hypothesis-to-data" title="From hypothesis to data">From hypothesis to data</a><ul>
+<li><a href="#Tools-selection" title="Tools selection">Tools selection</a></li>
+<li><a href="#Tool-usage-documentation" title="Tool usage documentation">Tool usage documentation</a></li>
+</ul>
+</li>
+<li><a href="#Data-capture" title="Data capture">Data capture</a><ul>
+<li><a href="#Data-summary" title="Data summary">Data summary</a></li>
+<li><a href="#Data-insights" title="Data insights">Data insights</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</span></p><h2 id="From-objectives-to-the-hypothesis" data-id="From-objectives-to-the-hypothesis"><a class="anchor hidden-xs" href="#From-objectives-to-the-hypothesis" title="From-objectives-to-the-hypothesis"><span class="octicon octicon-link"></span></a><span>From objectives to the hypothesis</span></h2><h3 id="Brainstorming" data-id="Brainstorming"><a class="anchor hidden-xs" href="#Brainstorming" title="Brainstorming"><span class="octicon octicon-link"></span></a><span>Brainstorming</span></h3><ul>
+<li><span>As a group, we were interested in social intervention.</span></li>
+<li><span>Our objective was to find a problem that is local and can be extrapolated to new opportunities and co-relations.</span></li>
+<li><span>Something that is impacted by our current situation as newly moved foreigners in Barcelona.</span></li>
+<li><span>Roberto suggested loneliness and all of us found that super interesting and lead into asking questions like:</span></li>
+<li><span>How the size of the social circle might affect the depth of connections.</span></li>
+<li><span>How can you be lonely if you are connected to school, job, neighbourhood.</span></li>
+<li><span>What time of the day or what environments make you feel lonely?</span></li>
+<li><span>How to regnerate connections when you are in a transitional community?</span></li>
+</ul><h3 id="Project-Goals" data-id="Project-Goals"><a class="anchor hidden-xs" href="#Project-Goals" title="Project-Goals"><span class="octicon octicon-link"></span></a><span>Project Goals</span></h3><p><strong><span>Objective</span></strong></p><p><span>Make young people feel less lonely in Barcelona</span></p><p><strong><span>Question</span></strong></p><p><span>Is instant messaging making young people more lonely than other generations in Barcelona?</span></p><p><img src="https://www.maize.io/wp-content/uploads/2020/07/957e38a7-14c3-41d8-8984-85e68e9c5006-e1600952809525.jpg" alt="" loading="lazy"></p><p><strong><span>Hypothesis</span></strong></p><p><span>Instant messaging is making people feel lonely in Barcelona</span></p><p><strong><span>Tips</span></strong></p><p><span>-We think we could have been more definitive while setting the age group.</span></p><p><span>-Linking social media usage and loneliness as an assumption and the only factor.</span></p><p><span>-Generating our own data instead of an external source.</span></p><h2 id="From-hypothesis-to-data" data-id="From-hypothesis-to-data"><a class="anchor hidden-xs" href="#From-hypothesis-to-data" title="From-hypothesis-to-data"><span class="octicon octicon-link"></span></a><span>From hypothesis to data</span></h2><h3 id="Tools-selection" data-id="Tools-selection"><a class="anchor hidden-xs" href="#Tools-selection" title="Tools-selection"><span class="octicon octicon-link"></span></a><span>Tools selection</span></h3><p><img src="https://aws1.discourse-cdn.com/arduino/original/4X/6/b/6/6b6434040864717bfe83afcf9104dd9160b105d8.gif" alt="" loading="lazy"></p><p><span>The tool we used was Ardurino with LSR sensor  to measure light.</span></p><p><img src="https://www.intorobotics.com/wp-content/uploads/2015/01/EL1-002_DetailEnlarge_001_opt.jpg" alt="" loading="lazy"></p><p><span>We had two other options, the web scraper for collecting data about online behaviours or the physical intervention to interact with people for understanding loneliness from different perspectives.</span></p><p><span>Now we are satisfied with the tool we used, but in the future we would add more interactions to it by using audio visual ways of collecting data.</span></p><h3 id="Tool-usage-documentation" data-id="Tool-usage-documentation"><a class="anchor hidden-xs" href="#Tool-usage-documentation" title="Tool-usage-documentation"><span class="octicon octicon-link"></span></a><span>Tool usage documentation</span></h3><p><strong><span>Data capturing tool set:</span></strong></p><ul>
+<li><span>Ardurinio board with LDR sensors.</span></li>
+<li><span>Data capturing device, either  laptop or a small computer device attached to the Ardurino.</span></li>
+</ul><p><img src="https://drive.google.com/file/d/164OqeaXtcv0gmACKvOaAEMu8LBXtezlu/view?usp=sharing" alt="" loading="lazy"></p><p><strong><span>Installation:</span></strong></p><ul>
+<li><span>Face the LDR sensors by bending to directions based on the locations of the people around the table.</span></li>
+<li><span>Attach the machine to a piece of cardboard and attached to the bottom of the table with tape.</span></li>
+<li><span>If the LDR sensor does not capture enough light, when the device is too far, cover the device with a diffuser paper for capturing distant light.</span></li>
+</ul><h4 id="Data-capturing-strategy" data-id="Data-capturing-strategy"><a class="anchor hidden-xs" href="#Data-capturing-strategy" title="Data-capturing-strategy"><span class="octicon octicon-link"></span></a><span>Data capturing strategy</span></h4><p><span>We wanted to see with our data collection, if people use their phones for instant social interactions and messaging even when they have a company around them.</span></p><p><span>Restaurants could be a good place for capturing this, by seeing people being together, but some of them use their phones secretly under the table, disconnecting themselves from others. We couldn’t measure it in real life, because we couldn’t install the device without the laptop under the table, so we observed if this is a valid case by visiting restaurants during lunch time around Poblenou.</span></p><p><span>The findings:</span></p><ul>
+<li><span>When people are alone, they don’t just focus on their lunch, but they interact with their phones</span></li>
+<li><span>When people want to use their phones in company, they do this under the table, to not show</span></li>
+</ul><p><img src="https://imgur.com/1IZWebS.jpg" alt="" loading="lazy"></p><h4 id="Materials-needed" data-id="Materials-needed"><a class="anchor hidden-xs" href="#Materials-needed" title="Materials-needed"><span class="octicon octicon-link"></span></a><span>Materials needed</span></h4><ul>
+<li><span>arduino board</span></li>
+<li><span>jumper wires</span></li>
+<li><span>LDR light sensors (4)</span></li>
+<li><span>breadboard</span></li>
+<li><span>10k transistors (4)</span></li>
+<li><span>usb cable to power</span></li>
+<li><span>carboard</span></li>
+<li><span>masking tape</span></li>
+<li><span>phone</span></li>
+</ul><p><img src="https://i.imgur.com/Qx4ro86.jpg" alt="" loading="lazy"></p><h4 id="Detail-setup-instructions" data-id="Detail-setup-instructions"><a class="anchor hidden-xs" href="#Detail-setup-instructions" title="Detail-setup-instructions"><span class="octicon octicon-link"></span></a><span>Detail setup instructions</span></h4><ol>
+<li><span>Set up the arduino board using jumper wires and LDR sensor. Using the image shared at the main HackMD file.</span></li>
+</ol><p><img src="https://i.imgur.com/ukn8S0A.png" alt="" loading="lazy"></p><ol start="2">
+<li>
+<p><span>Connect multiple light sensors and point them in opposite directions.</span></p>
+</li>
+<li>
+<p><span>Copy-pasted the source code file.</span></p>
+</li>
+</ol><p><img src="https://i.imgur.com/5MBfasT.png" alt="" loading="lazy"></p><ol start="4">
+<li>
+<p><span>Stacked the arduino board and the bread board next to each other.</span></p>
+</li>
+<li>
+<p><span>Taped them down to a piece of cardboard that fit to the correct size. (ensure cables remain undisturbed to not disrupt accuracy)</span></p>
+</li>
+</ol><p><img src="https://i.imgur.com/OCgyeRs.jpg" alt="" loading="lazy"></p><ol start="6">
+<li>
+<p><span>Attached facing down to the bottom of the table.</span></p>
+</li>
+<li>
+<p><span>Used phone (whatsapp, instagram, FB messenger, photo gallery) under sensor.</span></p>
+</li>
+<li>
+<p><span>Observed when data waves peak and dip based on light usage.</span></p>
+</li>
+</ol><p><img src="https://i.imgur.com/IX0oDsb.jpg" alt="" loading="lazy"></p><p><img src="https://imgur.com/mj2OxSf.jpg" alt="" loading="lazy"></p><h4 id="Data-collected" data-id="Data-collected"><a class="anchor hidden-xs" href="#Data-collected" title="Data-collected"><span class="octicon octicon-link"></span></a><span>Data collected</span></h4><p><img src="https://imgur.com/abper5r.gif" alt="" loading="lazy"></p><p><span>We used a serial monitor at first to give us a visual representation of the light changes then used CSV to give us a numerical output which represents the same information in another fashion. The CSV is able to give us the tabular data to evaluate in further steps.</span></p><p><span>We gave each sensor its own line so that theoretically, if there were multiple phones, we could see which direction the light was coming from. We could identify micro changes based on the different curve points the light intensity from differing media apps which are based on how users usually interact with and navigate them.</span></p><p><img src="https://imgur.com/MCwGgVM.gif" alt="" loading="lazy"></p><h4 id="Tips" data-id="Tips"><a class="anchor hidden-xs" href="#Tips" title="Tips"><span class="octicon octicon-link"></span></a><span>Tips</span></h4><ul>
+<li><span>The data that was collected was only when the device was used under the table. No data was gathered when it is used above the table.</span></li>
+<li><span>The usage was calculated precisely only when the device was on full brightness mode. Dark mode might mess with the data and might miss the usage.</span></li>
+<li><span>The sensor works to its full potential only in dark environments.</span></li>
+<li><span>To connect it through internet so that we didn’t have to use the wires and be restricted.</span></li>
+</ul><h2 id="Data-capture" data-id="Data-capture"><a class="anchor hidden-xs" href="#Data-capture" title="Data-capture"><span class="octicon octicon-link"></span></a><span>Data capture</span></h2><h3 id="Data-summary" data-id="Data-summary"><a class="anchor hidden-xs" href="#Data-summary" title="Data-summary"><span class="octicon octicon-link"></span></a><span>Data summary</span></h3><table>
+<thead>
+<tr>
+<th><span>Data Summary</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>Project Title</span></td>
+<td><span>Lonely young people</span></td>
+</tr>
+<tr>
+<td><span>Capture Start</span></td>
+<td><span>12-11-2021</span></td>
+</tr>
+<tr>
+<td><span>Capture End</span></td>
+<td><span>12-11-2021</span></td>
+</tr>
+<tr>
+<td><span>Original Data Format</span></td>
+<td><span>Multiple images</span></td>
+</tr>
+<tr>
+<td><span>Submitted format</span></td>
+<td><span>CSV file</span></td>
+</tr>
+<tr>
+<td><span>Total Data Points</span></td>
+<td><span>100</span></td>
+</tr>
+<tr>
+<td><span>Number of datasets</span></td>
+<td><span>1</span></td>
+</tr>
+<tr>
+<td><span>Data Repository</span></td>
+<td><a href="https://github.com/fablabbcn/mdef-a-world-in-data" target="_blank" rel="noopener"><span>https://github.com/fablabbcn/mdef-a-world-in-data</span></a></td>
+</tr>
+</tbody>
+</table><h3 id="Data-insights" data-id="Data-insights"><a class="anchor hidden-xs" href="#Data-insights" title="Data-insights"><span class="octicon octicon-link"></span></a><span>Data insights</span></h3><div style="width:100%;height:0;padding-bottom:216%;position:relative;"><iframe src="https://giphy.com/embed/hCu9tsLK4IZ4U77vFZ" width="50%" height="50%" style="position:absolute" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></div><p><a href="https://giphy.com/gifs/hCu9tsLK4IZ4U77vFZ" target="_blank" rel="noopener">
+</a></p><ul><a href="https://giphy.com/gifs/hCu9tsLK4IZ4U77vFZ" target="_blank" rel="noopener">
+<li><span>The amount of time spent on an app can be a window into what kind of connection the user needs or desires.</span></li>
+<li><span>The sudden spike and fall of data graph represents the speed of the scrolling activity. This maybe can be an indication of the mood of the person- maybe how anxious the person is.</span></li>
+<li><span>Frequency of use- how often is the urge to use phone when already in a social situation?</span></li>
+<li><span>How often the spikes change between apps could indicate the attention span or focus of a person</span></li>
+</a></ul><a href="https://giphy.com/gifs/hCu9tsLK4IZ4U77vFZ" target="_blank" rel="noopener">
+<h4 id="No-phone" data-id="No-phone"><a class="anchor hidden-xs" href="#No-phone" title="No-phone"><span class="octicon octicon-link"></span></a><span>No phone</span></h4>
+<p><span>Four sensors are turned on, but detecting almost no light.</span></p>
+<p><img src="https://i.imgur.com/ltgXmhW.png" alt="" loading="lazy"></p>
+<h4 id="Instagram" data-id="Instagram"><a class="anchor hidden-xs" href="#Instagram" title="Instagram"><span class="octicon octicon-link"></span></a><span>Instagram</span></h4>
+<p><span>Every peak is a scroll down, at the left is a slow scrolling, in the right its a fast scrolling (Anxious people?)</span></p>
+<p><img src="https://i.imgur.com/owNCnnq.png" alt="" loading="lazy"></p>
+<h4 id="Whatsapp" data-id="Whatsapp"><a class="anchor hidden-xs" href="#Whatsapp" title="Whatsapp"><span class="octicon octicon-link"></span></a><span>Whatsapp</span></h4>
+<p><img src="https://i.imgur.com/p0qdTia.png" alt="" loading="lazy"></p>
+<h4 id="Photo-browsing" data-id="Photo-browsing"><a class="anchor hidden-xs" href="#Photo-browsing" title="Photo-browsing"><span class="octicon octicon-link"></span></a><span>Photo browsing</span></h4>
+<p><span>The flat areas show less movement in the screen.</span><br>
+<img src="https://i.imgur.com/4fVKNtt.png" alt="" loading="lazy"></p>
+<h4 id="Gmail" data-id="Gmail"><a class="anchor hidden-xs" href="#Gmail" title="Gmail"><span class="octicon octicon-link"></span></a><span>Gmail</span></h4>
+<p><span>the interface of gmail is practically white, so there are no radical changes in the brightness.</span></p>
+<p><img src="https://i.imgur.com/iAEDwak.png" alt="" loading="lazy"></p>
+<p><img src="https://i.imgur.com/hcfUmrT.png" alt="" loading="lazy"></p>
+<h3 id="Tips1" data-id="Tips"><a class="anchor hidden-xs" href="#Tips1" title="Tips1"><span class="octicon octicon-link"></span></a><span>Tips</span></h3>
+<p><span>Future steps for the experiment:</span></p>
+<ul>
+<li><span>Increase number of sensors across different tables</span></li>
+<li><span>Make them unattached from the computer to be more discreet(using arduino feather with wifi data transfer)</span></li>
+<li><span>Identify further connections between media app usage and loneliness</span></li>
+<li><span>Use unbiased test subjects</span></li>
+<li><span>Test in crowded, social environments</span></li>
+</ul>
+<p><img src="https://imgur.com/lzk7oeV.jpg" alt="" loading="lazy"></p>
+</a></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#Sense-Making-Journal-Loneliness-Among-Young-Adults-in-Barcelona" title="Sense-Making Journal: Loneliness Among Young Adults in Barcelona">Sense-Making Journal: Loneliness Among Young Adults in Barcelona</a><ul class="nav">
+<li><a href="#From-objectives-to-the-hypothesis" title="From objectives to the hypothesis">From objectives to the hypothesis</a><ul class="nav">
+<li><a href="#Brainstorming" title="Brainstorming">Brainstorming</a></li>
+<li><a href="#Project-Goals" title="Project Goals">Project Goals</a></li>
+</ul>
+</li>
+<li><a href="#From-hypothesis-to-data" title="From hypothesis to data">From hypothesis to data</a><ul class="nav">
+<li><a href="#Tools-selection" title="Tools selection">Tools selection</a></li>
+<li><a href="#Tool-usage-documentation" title="Tool usage documentation">Tool usage documentation</a></li>
+</ul>
+</li>
+<li><a href="#Data-capture" title="Data capture">Data capture</a><ul class="nav">
+<li><a href="#Data-summary" title="Data summary">Data summary</a></li>
+<li><a href="#Data-insights" title="Data insights">Data insights</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li><a href="#Sense-Making-Journal-Loneliness-Among-Young-Adults-in-Barcelona" title="Sense-Making Journal: Loneliness Among Young Adults in Barcelona">Sense-Making Journal: Loneliness Among Young Adults in Barcelona</a><ul class="nav">
+<li><a href="#From-objectives-to-the-hypothesis" title="From objectives to the hypothesis">From objectives to the hypothesis</a><ul class="nav">
+<li><a href="#Brainstorming" title="Brainstorming">Brainstorming</a></li>
+<li><a href="#Project-Goals" title="Project Goals">Project Goals</a></li>
+</ul>
+</li>
+<li><a href="#From-hypothesis-to-data" title="From hypothesis to data">From hypothesis to data</a><ul class="nav">
+<li><a href="#Tools-selection" title="Tools selection">Tools selection</a></li>
+<li><a href="#Tool-usage-documentation" title="Tool usage documentation">Tool usage documentation</a></li>
+</ul>
+</li>
+<li><a href="#Data-capture" title="Data capture">Data capture</a><ul class="nav">
+<li><a href="#Data-summary" title="Data summary">Data summary</a></li>
+<li><a href="#Data-insights" title="Data insights">Data insights</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
