@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Designing for the next billion seconds</title>
+  <title>Principles and practices</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -59,10 +59,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Designing for the next billion seconds</h2>
+          <h2>Fab Academy</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Billion seconds</li>
+            <li>Week 1 - Principles and practices</li>
           </ol>
         </div>
 
@@ -71,15 +71,121 @@
 
 <!-- ============ Main Section ======== -->
 
-        <section class="inner page">
-      <div>
-           <center>
-              <div class="col-lg-6 pt-5 pt-lg-0">
-            <p data-aos="fade-up" data-aos-delay="100">
-              <i>"What happens when billions of <b>humans</b>, spend billions of <b>seconds</b> using billions of <b>smartphones</b>, concentrating money and power in the hands of a few <b>billionaires</b> who run corporations that manufacture billions of <b>devices</b> made of rare minerals used to extract and process billions of <b>data points</b> in <b>data centers</b> that consume billions of <b>kilowatt-hours of electricity</b> generating billions of tons of <b>carbon emissions</b>?"</i></p>
-            </center>
+          <section class="inner-page">
+      <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="assets/img/week1/projectmanagement.png" style = "margin-left: 10px" class="img-fluid" alt="" data-aos="zoom-in"/>
+            <br>
           </div>
-        </section>  
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h4 data-aos="fade-up"><mark>Git</mark></h3>
+            <p style = "margin-right: 10px" data-aos="fade-up" data-aos-delay="100">
+Throughout the course we will be using Github to publish our website and collaborate on projects. We will each have a local repository where we store the website on our computers, and a remote or global repository where we 'push' our local repository in order to share it with the world. Github is a <b>distributed</b> VCS (Version Control System) which means that every developer has a copy of the repository on their local computers. VCSs helps you store your code, manage the history of your work, synchronise work with various computers, collaborate with other developers, and manage content on a server remotely.</p>
+                <br>
+               <p class="mb-5">I used <a href="https://www.atlassian.com/git/tutorials">this tutorial</a> to learn what GIT is and its workflow. The following are a few concepts that are necessary to understand GIT:
+                <ul>
+                  <li><b>repository:</b> A GIT repository is a virtual storage of your project. It allows the developer to store versions of your code, which you can access anytime. </li>
+                  <li><b>local and remote:</b> A local repository means that it's stored locally, in your computer. A remote repository is stored elsewhere, in this case it would be the cloud. This way you can access your code even if you don't have your computer.</li>
+                  <li><b>add:</b> Adding helps you keep track of the changes you make to your project locally, which helps you backtrack if something goes wrong. A newly created file is not automatically added to the staging area (the index for example), preparing them to be added to the next <i>git commit</i></li>
+                  <li><b>commit:</b> Git commit is synonymous with the traditional software expression of 'saving'. After you're happy with the staging area after using <i>git add</i>, you commit it to the project using <i>git commit</i></li>
+                  <li><b>master and branches:</b> A 'master' branch is the main copy of the code, it is to this branch that all code being written in different branches will eventually be merged, and it will represent the current released version of the project.</li>
+                  <li><b>clone:</b> Cloning a repository means getting the latest up to date copy in order to work with it locally</li>
+                  <li><b>push:</b> This means 'pushing' the committed changes back into the repository, in order to make them avaialable to other developers.</li>
+                  <li><b>pull:</b> Pulling is the opposite of pushing, you're retrieving the latest copy with the changes pushed by others.</li></ul></p>
+
+                  <br>
+
+                  <p class="mb-5"><h3>Developing a project revolves around the basic edit-stage-commit pattern.</h3></p>
+                  <ol>
+                    <li> First you edit your files in your working directory</li>
+                    <li> When you're ready to save a copy of the current state of your project, you stage changes with <i><b>git add .</b></i></li>
+                    <li> Once you're done saving the changes, commit them to the project history with <i><b>git commit -m "commit message here"</b></i>, <i>git reset</i> is used to undo a commit</li>
+                    <li>Then you use <i>git push</i> to send the committed changes to remote repositories for collaboration, enabling other members to access a set of saved changes.</li>
+                    <img class="img-fluid" src="assets/img/week1/01.jpg"></ol>
+                <h4>Now that we know what's going on let's set up Git</h4>
+                <p class="mb-5">The first step is to install Git, for windows users they should use <a href="https://gitforwindows.org/">Gitbash</a>. Our website will be stored on Github, where a default website is already created for each of us. In order to edit the website, a local repository needs to be created. Let's clone the current global repository onto our local computer!
+
+                  <br>To clone the global repository into the local folder where you want the file to be located, change the directory through Command Prompt by typing cd Users/name/location.
+                  
+                  Once you've located the folder, type in git clone with your address (can be found on your global repository).
+                  <br>Now, we'll add a username and set our email on Gitbash</p>
+                  <img class="img-fluid" src="assets/img/week1/setupgit.jpg">
+
+                  <p class="mb-5"><br>In order to push your updated content onto a Github server, you will need a secure communication channel for sharing information, so you'll need an SSH Key.
+                    <br>
+                    <br>To create a SSH key, I typed in <b>ssh-keygen -t rsa -C ''your.email@example.com'' -b 4096</b> and followed the instructions
+                    <br>
+                    <br>Once the key has been generated, I copied my key by typing <b>pbcopy < ~/.ssh/id_rsa.pub</b> and imported it unto the SSH Key tab under <i>Settings</i> on Gitlhub</p>
+
+                    <h1>Web Development</h1>
+                    <br>
+                    <br><p class="mb-5">We've used three main web development codes to build this website. HTML (structure and content), CSS (design), and Javascript (page behaviour and effects).
+                    <p>I will be using bracket to write the website.
+
+<p>Bracket is a very style-friendly tool, since it allows live view of your website once you have saved your new changes with just one click.
+
+<p>The basic structure of a HTML website comes as:
+
+<p><b>< !DOCTYPE html>
+<p>< html>
+<p>< head>
+<p>< title> abc < /title>
+<p>< /head>
+
+<p>< body>
+<p>< h1> heading < /h1>
+<p>< p> paragraph < /p>
+<p>< /body>
+<p>< /html>
+<p>< /pre>
+<p>< br></b>
+<p>CSS can be embedded in three different ways:
+
+<p>inline: style attribute for single HTML elements inside
+
+<p><b>< body>< h1 style=''color:blue;margin-left:30px''> < /h1></b>
+<p>internal: using
+
+<p><b>< style> < /style></b>
+<p>external: at the beginning of a website, include
+  <p><b>< link rel=''stylesheet''></b>
+<p>One strategy I use to make a website is to look at the HTML code of existing websites (right-click-> page source on Google Chrome). It helps me to have a starting point with layout. Then, I referred to HTML and CSS references on W3schools.com in helping me with formatting and enriching the website.
+                      <p>I've used a bootstrap template with a pre-made design that has helped me not only fast forward my work, but also learn a lot from the way they'd write down commands and the effects they would have on the design.
+                      <br>Under style.css, I can change font and color, margin size for headers, paragraphs and lists, image formating and footers formatting, background color collectively, instead of making style changes each time manually. 
+                      <div><img src="assets/img/week1/css.jpg" max-width:100% max-height:100% style="width:100%; height:auto; margin:0 auto;"></div>
+
+          </section>
+
+
+          <section class="inner-page">
+      <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="assets/img/week1/fabacademy2020.jpg" style = "margin-left: 10px" class="img-fluid" alt="" data-aos="zoom-in"/>
+            <br>
+          </div>
+
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h4 data-aos="fade-up"><mark>Notable Past Fab Academy Representation</mark></h3>
+            <p style = "margin-right: 10px" data-aos="fade-up" data-aos-delay="100">
+          For this week‘s homework, I went through past documentations of the Fab Academy I found particularly interesting. In the following I want to highlight three examples and what stand out for me about them.
+          <h5><b>José Uribe</b></h6>
+          <img class="img-fluid" src="assets/img/week1/jose.PNG">
+          I liked José's style of documenting. Everything was very neat and summarised in one same page with a simple yet tasteful design.
+          <br>
+<br>
+          <h5><b>Jasmine Boerner</b></h5>
+            <img class="img-fluid" src="assets/img/week1/jasmine.PNG">
+            I noticed several of last year's MDEF students had a very incomplete Fab Academy page, if any at all. Jasmine was one of the few with a Fab Academy websites I could actually relate to, particularly because most of the time I felt like she was talking to me directly.
+            <br>
+<br>
+<h5><b>Morgane Shabhan</b></h5>
+            <img class="img-fluid" src="assets/img/week1/morgan.PNG">
+            I really appreciate Morgane's eye and artistic wit. I liked that she ended every week with a question for herself, as if she's giving herself homework based on what was learnt that week. Seems like a great tool for introspection and I might adopt it myself.
+
+
+
+          </section>
+
       </div>
 
   </main><!-- End #main -->
